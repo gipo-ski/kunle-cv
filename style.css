@@ -131,6 +131,13 @@ p {
   flex-direction: row;
   justify-content: space-between;
 }
+.skills-list #frontend-div,
+#backend-div {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 footer {
   padding: 5rem 0 3rem 0;
@@ -138,6 +145,156 @@ footer {
 }
 #copyright {
   font-weight: 600;
+}
+
+@media screen and (max-width: 2560px) {
+  body {
+    font-size: 30px;
+    line-height: 2;
+
+    width: 65%;
+    padding: 0 5rem;
+    margin: 7.5rem auto;
+    display: grid;
+  }
+
+   img {
+    width: 2.25rem;
+  }
+
+  nav {
+    top: 3.75rem;
+  }
+
+    nav ul li {
+    padding: 0.75rem 2.75rem;
+  }
+
+  #header h1 {
+    font-size: 3.75rem;
+  }
+
+    /* h3 {
+    font-size: 2.25rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  } */
+
+
+  .top-div {
+    margin-top: 5rem;
+  }
+
+
+}
+
+@media screen and (max-width: 1920px) {
+  body {
+    font-size: 20px;
+    line-height: 1.5;
+
+    width: 64%;
+    padding: 0 5rem;
+    margin: 5rem auto;
+    display: grid;
+  }
+
+  img {
+    width: 2rem;
+  }
+
+  nav {
+    top: 3.5rem;
+  }
+
+  nav ul li {
+    padding: 0.75rem 2.35rem;
+  }
+
+  #header h1 {
+    font-size: 3.25rem;
+  }
+
+  /* h3 {
+    font-size: 2.25rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  } */
+
+  .top-div {
+    margin-top: 6.5rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    font-size: 18px;
+    line-height: 1.25;
+
+    width: 71.5%;
+    padding: 0 4.5rem;
+    margin: 4.75rem auto;
+    display: grid;
+  }
+
+  nav {
+    top: 2.45rem;
+  }
+
+  nav ul li {
+    padding: 0.5rem 1.75rem;
+  }
+
+  #header h1 {
+    font-size: 2.5rem;
+  }
+
+  .top-div {
+    margin-top: 3.75rem;
+  }
+}
+@media screen and (max-width: 1042px) {
+  body {
+    font-size: 16px;
+    line-height: 1.15;
+
+    width: 72%;
+    padding: 0 2.5rem;
+    margin: 2.5rem auto;
+    display: grid;
+  }
+
+  nav ul li {
+    padding: 0.5rem 0.75rem;
+  }
+
+  #header h1 {
+    font-size: 2.35rem;
+  }
+
+  img {
+    width: 1rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .skills-list p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -152,17 +309,17 @@ footer {
   }
 
   .material-symbols-outlined {
-  margin-left: 0.5rem;
-  font-size: 2.5rem;
-}
+    margin-left: 0.5rem;
+    font-size: 2.5rem;
+  }
 
   nav {
     display: none;
   }
 
   .top-div {
-  margin-top: 1rem;
-}
+    margin-top: 1rem;
+  }
 
   .skills-list {
     display: flex;
@@ -173,11 +330,18 @@ footer {
     display: none;
   }
 
+  .skills-list #frontend-div,
+  #backend-div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* justify-content: space-between; */
+  }
+
   #header h1 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  padding: 1rem 0;
-}
+    font-size: 2.25rem;
+    padding: 1rem 0;
+  }
 
   h3 {
     font-size: 1.75rem;
@@ -186,6 +350,7 @@ footer {
   h4 {
     font-size: 1.5rem;
     padding: 1rem 0;
+    flex: 1;
   }
   h5 {
     font-size: 1.1rem;
@@ -196,12 +361,12 @@ footer {
   }
 
   footer {
-  padding: 2rem 0 1rem 0;
-  text-align: center;
-}
-#copyright {
-  padding-bottom: 0;
-}
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+  }
+  #copyright {
+    padding-bottom: 0;
+  }
 }
 
 /* ____________________end. */
